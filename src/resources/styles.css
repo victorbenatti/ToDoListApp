@@ -1,0 +1,62 @@
+@font-face {
+    -fx-font-family: 'Exo2';
+    src: url('/resources/fonts/Exo2-Regular.ttf');
+}
+
+.root {
+    -fx-background-color: #2c3e50; /* Fundo escuro */
+    -fx-padding: 10;
+    -fx-font-family: 'Exo2';
+}
+
+.text-field {
+    -fx-font-size: 14px;
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button {
+    -fx-background-color: #3498db;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: #2980b9; /* Azul mais escuro */
+    -fx-cursor: hand; /* Muda o cursor ao passar o mouse */
+}
+
+.remove-button {
+    -fx-background-color: #FF0000;
+}
+
+.check-button {
+    -fx-background-color: #008000;
+}
+
+.list-view {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #2c3e50;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.list-view .done {
+    -fx-text-fill: gray;
+    -fx-font-style: italic;
+    -fx-strikethrough: true;
+}
+
+/* Estilo do título */
+.title {
+    -fx-font-size: 36px; /* Tamanho da fonte */
+    -fx-font-family: 'Exo2';
+    -fx-font-style: normal;
+    -fx-font-weight: bold; /* Negrito */
+    -fx-text-fill: #ecf0f1; /* Cor do texto */
+}
+
