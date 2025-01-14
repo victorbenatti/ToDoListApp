@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Montserrat:wght@400;600&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
 @font-face {
     -fx-font-family: 'Exo2';
     src: url('/resources/fonts/Exo2-Regular.ttf');
@@ -17,26 +19,81 @@
     -fx-background-radius: 5;
 }
 
-.button {
+.task-text {
+    -fx-font-size: 16px;
+}
+
+/*.button {
     -fx-background-color: #3498db;
     -fx-text-fill: white;
     -fx-font-weight: bold;
     -fx-border-radius: 5;
     -fx-background-radius: 5;
-}
+    -fx-padding: 10;
+    -fx-border-width: 2;
+    -fx-border-color: transparent;
+}*/
 
 .button:hover {
-    -fx-background-color: #2980b9; /* Azul mais escuro */
-    -fx-cursor: hand; /* Muda o cursor ao passar o mouse */
+    -fx-cursor: hand;
+}
+
+.add-button {
+    -fx-background-color: #2980b9; /* Cor padrão */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5; /* Padding fixo */
+    -fx-border-width: 2; /* Largura da borda fixa */
+    -fx-border-color: transparent; /* Sem borda visível */
+    -fx-min-height: 10px; /* Altura mínima */
+    -fx-min-width: 100px; /* Largura mínima */
+}
+
+.add-button:hover {
+    -fx-background-color: #226c9c; /* Cor no hover */
+    -fx-padding: 5; /* Garantir padding fixo */
+    -fx-font-weight: bold; /* Mantém bold */
+    -fx-text-fill: white; /* Garante a cor do texto */
+    -fx-min-height: 10px; /* Altura mínima */
+    -fx-min-width: 100px; /* Largura mínima */
+}
+
+.add-button-text {
+    -fx-fill: #FFF;
 }
 
 .remove-button {
-    -fx-background-color: #FF0000;
+    -fx-background-color: transparent !important;
+    -fx-padding: 5 !important;
+    -fx-border-width: 2 !important;
+    -fx-border-color: transparent !important;
+    -fx-min-height: 10px !important;
+    -fx-min-width: 85px !important;
+}
+
+/*.remove-button:hover {
+}*/
+
+.remove-button-text {
+    -fx-fill: #FFF;
 }
 
 .check-button {
-    -fx-background-color: #008000;
+    -fx-background-color: transparent;
+    -fx-padding: 5; /* Adiciona padding */
+    -fx-border-radius: 5; /* Bordas arredondadas */
+    -fx-min-height: 10px !important;
+    -fx-min-width: 85px !important;
 }
+
+.check-button-text{
+    -fx-fill: #FFF;
+}
+
+/*.check-button:hover {
+}*/
 
 .list-view {
     -fx-background-color: #ecf0f1;
@@ -51,12 +108,13 @@
     -fx-strikethrough: true;
 }
 
-/* Estilo do título */
+/* Título do programa */
 .title {
-    -fx-font-size: 36px; /* Tamanho da fonte */
-    -fx-font-family: 'Exo2';
+    -fx-font-size: 36px;
     -fx-font-style: normal;
-    -fx-font-weight: bold; /* Negrito */
-    -fx-text-fill: #ecf0f1; /* Cor do texto */
+    -fx-fill: #FFFFFF;
 }
 
+.credits {
+    -fx-fill: #FFFFFF;
+}
