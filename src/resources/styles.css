@@ -6,13 +6,13 @@
 }
 
 .root {
-    -fx-background-color: #2c3e50; /* Fundo escuro */
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #3a5169, #142536);
     -fx-padding: 10;
     -fx-font-family: 'Exo2';
 }
 
 .text-field {
-    -fx-font-size: 14px;
+    -fx-font-size: 16px;
     -fx-background-color: #ecf0f1;
     -fx-text-fill: #2c3e50;
     -fx-border-radius: 5;
@@ -23,45 +23,20 @@
     -fx-font-size: 16px;
 }
 
-/*.button {
-    -fx-background-color: #3498db;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-border-radius: 5;
-    -fx-background-radius: 5;
-    -fx-padding: 10;
-    -fx-border-width: 2;
-    -fx-border-color: transparent;
-}*/
-
 .button:hover {
     -fx-cursor: hand;
 }
 
 .add-button {
-    -fx-background-color: #2980b9; /* Cor padrão */
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #3498db, #045082); /* Cor padrão */
     -fx-border-radius: 5;
     -fx-background-radius: 5;
-    -fx-padding: 5; /* Padding fixo */
+    -fx-padding: 6; /* Padding fixo */
     -fx-border-width: 2; /* Largura da borda fixa */
     -fx-border-color: transparent; /* Sem borda visível */
-    -fx-min-height: 10px; /* Altura mínima */
-    -fx-min-width: 100px; /* Largura mínima */
-}
-
-.add-button:hover {
-    -fx-background-color: #226c9c; /* Cor no hover */
-    -fx-padding: 5; /* Garantir padding fixo */
-    -fx-font-weight: bold; /* Mantém bold */
-    -fx-text-fill: white; /* Garante a cor do texto */
-    -fx-min-height: 10px; /* Altura mínima */
-    -fx-min-width: 100px; /* Largura mínima */
-}
-
-.add-button-text {
-    -fx-fill: #FFF;
+    -fx-min-height: 15px; /* Altura mínima */
+    -fx-min-width: 70px; /* Largura mínima */
+    -fx-alignment: center;
 }
 
 .remove-button {
@@ -73,27 +48,12 @@
     -fx-min-width: 85px !important;
 }
 
-/*.remove-button:hover {
-}*/
-
-.remove-button-text {
-    -fx-fill: #FFF;
-}
-
 .check-button {
     -fx-background-color: transparent;
-    -fx-padding: 5; /* Adiciona padding */
-    -fx-border-radius: 5; /* Bordas arredondadas */
+    -fx-padding: 5;
     -fx-min-height: 10px !important;
     -fx-min-width: 85px !important;
 }
-
-.check-button-text{
-    -fx-fill: #FFF;
-}
-
-/*.check-button:hover {
-}*/
 
 .list-view {
     -fx-background-color: #ecf0f1;
@@ -109,12 +69,22 @@
 }
 
 /* Título do programa */
-.title {
+.title-flow {
     -fx-font-size: 36px;
     -fx-font-style: normal;
-    -fx-fill: #FFFFFF;
+}
+
+.title-flow .to-text {
+    -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #3498db, #62baf5);
+    -fx-font-size: 50px;
+}
+
+.title-flow .do-list-text {
+     -fx-fill: linear-gradient(from 0% 0% to 100% 0%, #3498db, #06609c);
+     -fx-font-size: 50px;
 }
 
 .credits {
     -fx-fill: #FFFFFF;
+    -fx-font-style: italic;
 }
